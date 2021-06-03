@@ -1,0 +1,133 @@
+/* 	=============
+	footer styles 
+	============= */
+
+footer {
+	background-color: rgb(39, 44, 50);
+	color: #fff;
+	margin-top: 5rem;
+	padding: 2rem 0;
+}
+
+h4.social-header,
+h4.calendar-header,
+.subscribe-label {
+	font-family: 'Prata', serif;
+	margin-bottom: 3rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+/* 	======
+	social 
+	====== */
+
+.social,
+.subscribe {
+	margin-bottom: 5rem;
+}
+
+.social-icon {
+	background: rgb(39, 44, 50);
+	color: #fff;
+	padding: 6px;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	width: 2.4rem;
+	height: 2.4rem;
+	border: 1px solid #fff;
+	margin-right: 1.5rem;
+}
+
+.social-icon:hover {
+	color: rgb(241, 166, 77);
+	border-color: rgb(241, 166, 77);
+}
+
+/* 	=========
+	subscribe 
+	========= */
+
+input#subscribe {
+	width: 80%;
+	margin-bottom: 2rem;
+	padding: .5rem;
+}
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+}
+
+.subscribe-btn {
+	background-color: rgb(241, 166, 77);
+	border-radius: 1.5rem;
+	padding: .8rem 1.5rem;
+	color: rgb(39, 44, 55);
+	text-align: center;
+	max-width: 15rem;
+	font-size: 1.6rem;
+	border: none;
+	font-family: 'Prata', serif;
+	transition: .3s;
+}
+
+.subscribe-btn:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+/* 	========
+	calendar 
+	======== */
+
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: .5rem;
+	max-width: 30rem;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.day {
+	padding: .5rem;
+	text-align: center;
+	border: 1px solid #fff;
+	font-size: 1.4rem;
+}
+
+.day:hover {
+	cursor: pointer;
+	background-color: rgb(241, 166, 77);
+	color: rgb(39, 44, 50);
+	font-weight: 600;
+}
+
+/* 	=============
+	media queries 
+	============= */
+
+@media (min-width: 750px) {
+	.footer-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.social {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.subscribe {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	.calendar-container {
+		grid-column: 3/4;
+		grid-row: 1/2;
+		margin-left: auto;
+	}
+}

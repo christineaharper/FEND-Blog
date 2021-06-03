@@ -1,0 +1,53 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("post.css");
+
+:root {
+	font-size: 62.5%; /* sets base font 10px */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/* 	=============
+	base fonts 
+	============= */
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.15;
+}
+
+em {
+	font-style: italic;
+}
+
+/* 	=============
+	global layout 
+	============= */
+
+.outer-grid {
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(15vh, max-content) minmax(85vh, max-content) auto;
+}
+
+.center-container {
+	width: 90vw;
+	margin: 0 auto;
+}
